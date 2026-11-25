@@ -19,7 +19,8 @@ export default defineConfig(({mode}) => {
     process.env.GOOGLE_CLIENT_ID ||
     '';
 
-  return {base: '/UAS-Planning-Submittal/'
+  return {
+    base: '/UAS-Planning-Submittal/',
     define: {
       'import.meta.env.VITE_GOOGLE_MAPS_API_KEY': JSON.stringify(mapsApiKey),
       'import.meta.env.VITE_GOOGLE_CLIENT_ID': JSON.stringify(googleClientId),
